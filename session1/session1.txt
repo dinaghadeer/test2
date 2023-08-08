@@ -1,0 +1,28 @@
+ Task1: to create a directory we use "mkdir" command, because of the space in the dir. name we put the name in " ".
+ then change the current working dir. to the new one by "cd + name" command.
+ 
+ Task2: inside the first dir. we make another by "mkdir" command, we move to it by "cd" command, then we make a new 3 files by "touch" command all in one line.
+ we verify that all the 3 files are created by "ls" command to show the content of the dir.
+ 
+ Task3: we go back to the main dir. by "cd .." command, and create a hidden file by the dot command before the name of the file --> ".hidden_file".
+ to verify the hidden file is created use "ls -a" command.
+ 
+ Task4: to use the nano text editor use "nano+file name" command and add text, save it with "^o" and quit with "^x". 
+ display the content of the file with "cat" command.
+ 
+ Task5: go back with "cd +name".
+ 
+ Task6: create a new dir. _with the usual "mkdir" commnad_ called ("-") and i moved to it by "cd .." --> "cd documents/-" and there you are!
+ 
+ Task7: to copy a dir. in another u need a new one we called it "My_Documents", then copied the whole "documents" dir. by "cp -R/(the new dir.), so if we moved the the "My_Documents" dir. and used "ls" command the "documents" dir. will show up!
+ 
+ Task8: to display the content of the hidden file we need to give it a content first by "echo" command --> echo hi hide > .hidden_file.
+ and display the content with "cat" command.
+ 
+ Task9: to move the files from dir. to another use "mv" command --> mv file2.txt file3.txt ../
+ the "../" to move the files to the main dir.
+ and back to the main dir "cd .." and "ls" to show that the files has succesfully moved!
+ 
+ Task10: to go back to home dir. use "cd ~" and remove the main dir. with "rm -r" + the dir. name, then "ls" to make sure that it has been removed succesfully.
+ 
+ That's it<3
