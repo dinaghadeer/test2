@@ -1,0 +1,22 @@
+ after we downloaded the task file..
+
+ Step1: go to downloads file by "cd" command, then "ls" and we will find out that the file is compressed so we will decompress it by "unzip" command especially that its extension is (.zip).
+ then we will go to that decompressed file by "cd" command and "ls" and "cat" command to see what written in the file we found.
+ "locate what you can't see" --> hidden file
+ to show hidden files we use "ls -a" command, so there is "level-1.tar" file that is archived.
+ 
+ Step2: to unarchive it we use "tar xfv" f->for specifiying a filename, x-> for extracting the archive, v->for displaying verbose information.
+ after we go into the file with "cd" command, "cat" for the file to see what it contains--> "decompress level-2".
+ 
+ Step3&4: we decompress "level-2" by "tar xfv" then "ls" then "cd" the "level-2" directory.
+ 
+ Step5: "ls" then "cat" the file which contain--> "locate level-3".
+ 
+ Step6: so we will lacate the "level-3" dir. by "find. -name" command, then "cd" the path then "ls" to finally find "level-3' dir.
+ then we used "tar xfv" to be able to access it.
+ 
+ Step7: "ls" then "cd" "level-3" dir. then "ls" and "cat" the file -->"you're seeking a file with a certain size"
+ 
+ Step8: to access the link we use "ls -l" + the link, after that we found a file so we used "cat" command and the size was 73 bytes.
+ 
+ Step9: to search the file with its size we use "find. -size" + the size, now we have the path of it so "cat" the file and "congrats!".
