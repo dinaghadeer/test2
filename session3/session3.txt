@@ -1,0 +1,44 @@
+TASK 3:
+
+ Step1: first we are going to add a new user named 'osc' by "sudo + useradd + the user's name", then we will set the password by the "sudo + passwd + the user's name".
+ 
+ now to make a new group named 'osc_group' we will use "sudo + groupadd + the group's name".
+ 
+ now to add the previous user to this group we will use "sudo + usermod + -a -G + the group's name + the user's name".
+ 
+ now we have to add the 'osc' user to the sudors to give it the priviliges of the root user so, we will use "sudo + adduser + the user's name + sudo" and Done!
+ 
+ to switch to this new user use "sudo + su - + the user's name". 
+ 
+ Step2: because of i didn't use '-m' with "useradd" command, there wasn't a home directory for the user so i used "sudo mkhomedir_helper + the user's name" to make a home dir. for the user then switch to the osc user.
+ 
+ if we used "pwd" now we are in the home directory of the user.
+ 
+ we will make a new dir. with "mkdir" command, and 3 files in it with "touch" command.
+ 
+ to change the permissions of them use "chmod" command, the public file should heve read and write permission for the all so its command will be "chmod a+rw + file's name" --> 'a' for all, '+' for add, 'rw' for read and write.
+ 
+ for the private file the command will be "chmod u+rw + the file's name"--> 'u' for the user, for the rest we can just use numbers "chomd 600" -> '6' for the read and write and '0' for nothing.
+ 
+ for the last file the executable --> "chomd 750" --> '7' for the rwx permission for the user and '5' for rx permission for the group .
+ 
+ Step3: to change the owner of the file use "sudo chown + the new owner + the file's name" .
+  
+ after to change the group of the file use "sudo chgrp + the new group + the file's name" .
+ 
+ Step4: make sleep process at the background --> "sleep 1000 &" the '&' for make the process at the background.
+ "jobs" to make sure it is working.
+ now "ps" to get its PID.
+ and "kill -9 + the PID" to kill the process using its id, '-9' for the kill signal.
+ now "jobs" and it's killed!
+ 
+ for this step to open vim use "vim + a name" and it will open, then "ctrl+z" to suspend it.
+ now "jobs" and it is suspended.
+ 
+ to kill this suspended process by its name use "pkill -9 + the name" or "killall -9 vim".
+ 
+ and to verify that they are no longer running use "ps" command, if they aren't exist then they are no longer running!
+ 
+ Step5: to instal 'neofetch' package use "sudo apt install neofetch" command, and to uninstall it use "sudo apt remove neofetch" command.
+ 
+ <3
